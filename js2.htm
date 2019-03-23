@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h2>Display Name</h2>
+    <p>Click on the button to display your name with vibrant colors.</p>
+    <button type="button" onclick="myfunction()">Click here!</button>
+    <p id="love">What's your name?</p>
+    <script>
+      function myfunction() {
+        document.getElementById("love").innerHTML = "Loveena";
+        document.getElementById("love").style.fontSize = "25px";
+        document.getElementById("love").style.color = "blue";
+        document.getElementById("love").style.backgroundColor = "pink";
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h2>All about Flowers!</h2>
+    <p>Click on the buttons to see different flowers.</p>
+    <img id="love" src="flower.jpeg" width="350px" height="450px" />
+    <script>
+      function myfunc(a) {
+        var pic;
+        if (a == 0) {
+          pic = "rose.gif";
+        } else if (a == 1) {
+          pic = "lotus.gif";
+        } else {
+          pic = "lily.gif";
+        }
+        document.getElementById("love").src = pic;
+      }
+    </script>
+    <p>
+      <button type="button" onclick="myfunc(0)" style="width:80px;height:30px;">
+        Rose
+      </button>
+      <button type="button" onclick="myfunc(1)" style="width:80px;height:30px">
+        Lotus
+      </button>
+      <button type="button" onclick="myfunc(2)" style="width:80px;height:30px">
+        Lily
+      </button>
+    </p>
+  </body>
+</html>
